@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Mark</title>
+</head>
+<body>
+    <div class="container py-5 ">
+        <h1 class="mb-4">Bookmarker</h1>
+        <hr>
+        <div class="text m-auto text-center py-4 " >
+            <h3 class="mb-5">Bookmark your favorite sites</h3>
+            <p class="fw-bold">Site Name</p>
+            <input type="text" placeholder="Bookmark name" class="form-control mb-2 w-75 m-auto" id="name" required>
+            <div class="alert alert-danger w-75 m-auto p-2 mb-1 d-none" id="nameAlert">Name is required for ex:facebook</div>
+            <p class="fw-bold">Site URL</p>
+            <input type="text" placeholder="website URL" class="form-control w-75 m-auto" id="url" required>
+            <div class="alert alert-danger w-75 m-auto p-2  mt-1 mb-0 d-none" id="urlRequired"> url is required </div>
+            <div class="alert alert-danger w-75 m-auto p-2  mt-1 mb-0 d-none" id="urlAlert"> url must start with https:</div>
+            <button class="btn btn-info text-white mt-2" onclick="collectData()" type="submit" id="add">Add</button>
+        </div>
+        <input type="text" placeholder="Search..." class="form-control w-50 m-auto my-5" id="search" onkeyup="search()">
+        <div id="data" class="my-4  ">
+           
+        </div>
+        <footer>
+            <hr>
+            <p class="fw-bold">© 2019 Bookmarker Inc.</p>
+        </footer>
+    </div>
+
+    <script src="j.s/bootstrap.bundle.min.js"></script>
+    <script src="j.s/main.js"></script>
+</body>
+</html>

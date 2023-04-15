@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.container .text{
+    background-color: #ccc;
+}
+.linear{
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(255, 255, 255));
+}
+a{
+    text-decoration: none;
+}
+.siteName{
+    font-size: 18px;
+    margin-right: 12px;
+}
+@media (max-width:375px){
+    .siteName{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
